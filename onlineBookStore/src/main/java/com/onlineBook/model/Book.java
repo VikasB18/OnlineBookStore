@@ -24,7 +24,7 @@ public class Book {
 	@Column(name = "price")
 	private String price;
 
-	@Column(name = "picByte", length = 1000)
+	@Column(name = "picByte", columnDefinition = "BLOB")
 	private byte[] picByte;
 
 	public Long getId() {
